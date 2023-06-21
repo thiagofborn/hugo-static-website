@@ -1,0 +1,29 @@
+name: Azure Static Web Apps CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, closed]
+
+jobs:
+  build_and_deploy_job:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout our repo
+        uses: actions/checkout@v2
+
+      - name: Setup Azure Static Web Apps CLI
+        uses: Azure/static-web-apps-cli-action@v0.4.0
+        with:
+          version: 'latest'
+
+      - name: Build And Deploy
+        run: |
+          cd web-app
+          npm install && npm run build
+          cd ..
+          swa login
+          swa deploy --app <APP_NAME> --token ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
