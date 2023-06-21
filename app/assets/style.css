@@ -1,0 +1,16 @@
+body {
+    background-color: #FFC600; /* MacDonald's yellow */
+  }
+  
+  h1, h2, h3 {
+     color: #8B6B4D; /* Fallout 4 brown */
+  }
+  
+  p {
+     color: #BFBFBF; /* Fallout 4 gray */
+  }
+  
+  .button {
+     background-color: #D31010; /* MacDonald's red */
+  }
+  
