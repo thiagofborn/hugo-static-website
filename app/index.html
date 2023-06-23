@@ -1,31 +1,108 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GitHub Actions and Captain Marvel</title>
+    <title>Capitain Marvel, ChatGPT, and Github Actions</title>
     <link rel="stylesheet" href="./assets/style_darktrace.css">
 
   </head>
   <body>
     <img src="./media/capitain_marvel.jpg" alt="Captain Marvel">
-    <p>GitHub Actions is awesome and so is Captain Marvel! 
+    <meta charset="UTF-8">
+    <title>Modern Website</title>
+    <style>
+        /* Paste the CSS styles here */
 
-      Set up a version control system - The first step in building a CI/CD pipeline is to have a version control system such as GitHub, Bitbucket, or GitLab. It helps to keep track of changes made to the code and allows developers to collaborate effectively.
+        /* Additional Styles for Modern Elements */
+        .hero-section {
+            background-image: url('hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-Create a build system - A build system is responsible for building the code, running tests, and creating deployable artifacts. Some popular build systems that can be used are Jenkins, Travis CI, or Azure DevOps.
+        .hero-title {
+            font-size: 48px;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
 
-Add a static site generator - Use a static site generator such as Jekyll, Hugo, or GatsbyJS. These tools can simplify the process of building and deploying static websites.
+        .hero-subtitle {
+            font-size: 24px;
+            color: #ffffff;
+            margin-top: 20px;
+        }
 
-Implement a Continuous Integration (CI) pipeline - For CI, you can use a tool that integrates with your version control system to automatically build the code and run tests whenever code changes are made. This helps identify issues early in the development process, and ensure that the code is always in a deployable state. Azure DevOps offers a CI pipeline feature that can help you automate this process.
+        .feature-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
 
-Implement a Continuous Deployment (CD) pipeline - For CD, you can use a tool that automatically deploys the code to Azure whenever there is a new code change. Azure Static Web Apps is a service that makes it easy to deploy static websites to the cloud. It can be configured to automatically deploy changes from a GitHub repository.
+        .feature-box {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
 
-Set up a release pipeline - In the release pipeline, you can automate the process of deploying to different environments such as development, staging, and production.
+        .feature-title {
+            font-size: 24px;
+            color: #232f3e;
+            margin-top: 10px;
+        }
 
-Monitor app performance - For monitoring app performance, you can use tools like Azure Application Insights, which helps you monitor the performance of your app and identify issues.
+        .feature-description {
+            color: #555555;
+            margin-top: 10px;
+        }
 
-Maintain version control - It's important to maintain version control of your app and ensure all changes are tracked while promoting them to production.
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-In summary, building a CI/CD pipeline for deploying static web pages on Azure requires a version control system, build system, static site generator, CI pipeline, CD pipeline, release pipeline, and monitoring tools. By following these steps, you can simplify the process of building and deploying static websites and ensure a smooth development process.
-    </p>
-  </body>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Modern Website!</h1>
+            <p class="hero-subtitle">Where GitHub Actions, Captain Marvel, and ChatGPT Collide</p>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="feature-box">
+            <img src="github-actions.png" alt="GitHub Actions" width="120">
+            <h2 class="feature-title">GitHub Actions</h2>
+            <p class="feature-description">GitHub Actions is a powerful workflow automation tool that allows you to build, test, and deploy your projects effortlessly.</p>
+        </div>
+        <div class="feature-box">
+            <img src="captain-marvel.png" alt="Captain Marvel" width="120">
+            <h2 class="feature-title">Captain Marvel</h2>
+            <p class="feature-description">Captain Marvel is a superhero character from Marvel Comics known for her incredible powers and determination to protect the universe.</p>
+        </div>
+        <div class="feature-box">
+            <img src="chatgpt.png" alt="ChatGPT" width="120">
+            <h2 class="feature-title">ChatGPT</h2>
+            <p class="feature-description">ChatGPT is an AI language model developed by OpenAI that can engage in human-like conversations and provide information on various topics.</p>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript code can be added here if needed
+    </script>
+</body>
 </html>

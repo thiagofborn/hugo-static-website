@@ -4,4 +4,15 @@
 * Using GitHub Actions to build the pipeline
 * Using GitHub as git repository
 
-## 
+## Custom Domain Configuration
+
+1. Domain validation 
+
+```txt
+https://www.skyui.space 
+```
+
+Using the registrar Domain.com 
+Advanced -> Going to DNS & Nameservers -> and then adding a record. 
+ CNAME added based on the Azure reference.
+![app/media/domain-www-01.png](app/media/domain-www-01.png)
