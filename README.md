@@ -16,3 +16,5 @@ Using the registrar Domain.com
 Advanced -> Going to DNS & Nameservers -> and then adding a record. 
  CNAME added based on the Azure reference.
 ![app/media/domain-www-01.png](app/media/domain-www-01.png)
+
+# Build Infra using Terraform for a Blue-green deployment of a demo APP on AKS cluster on Azure 
